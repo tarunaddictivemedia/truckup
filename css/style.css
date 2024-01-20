@@ -1012,4 +1012,20 @@ p.tag span, .bloglistgrp .content p.tag span {
     .relatedslider {
         margin-bottom: 0px;
     }
+    .mobilemoney .note {
+        display: none;
+    }
+    .multiplecntnt h2 {
+        font-size: 30px;
+    }
+    .flow-content {
+        margin-bottom: 50px;
+    }
+    .flow-truckapp .truckflow:before {
+        height: 50px;
+    }
+    .footerbelowvideo video#video {
+        height: 500px;
+        object-fit: cover;
+    }
 }
