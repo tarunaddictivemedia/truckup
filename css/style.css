@@ -961,5 +961,8 @@ p.tag span, .bloglistgrp .content p.tag span {
     }
     .bloglistingsec .flex {
         margin: 0 -10px;
+    }    
+    .teammembersec {
+        padding-top: 0px !important;
     }
 }
