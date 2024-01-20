@@ -409,6 +409,8 @@
 <!-- End Footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script type="text/javascript">
 	let container = document.querySelector(".container-fluid");
 let maskContainer = document.querySelector(".mask-container");
@@ -441,6 +443,26 @@ $(document).ready(function(){
     $(".navigationwrapper .nav").hide();
   });
 });
+</script>
+<script type="text/javascript">
+	gsap.registerPlugin(ScrollTrigger);
+	gsap.to(".phoneapp", {
+		y: -130,
+		duration: 8,
+		scrollTrigger: {
+			trigger: ".phoneapp",
+			start: "top 60%",
+			end: "top 40%",
+			scrub: 3,
+			toggleActions: "restart	pause resume reset",
+			// 				onEnter	onLeave		onEnterBack		onLeaveBack
+			marker: {
+				startColor: "purple",
+				endColor: "fuchsia",
+				fontSize: "3rem",
+			}
+		}
+	})
 </script>
 
 </body>
