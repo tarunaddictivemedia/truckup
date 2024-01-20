@@ -965,4 +965,7 @@ p.tag span, .bloglistgrp .content p.tag span {
     .teammembersec {
         padding-top: 0px !important;
     }
+    .navigationwrapper .nav ul li svg path {
+        fill: #fff;
+    }
 }
