@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TruckUP</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header-fixed">
+	<div class="container">
+		<div class="header-row flex alignCenter spaceBetween">
+			<div class="logowrapper">
+				<a class="logo"><img src="images/logo.png" alt="TruckUP logo"></a>
+			</div>
+			<div class="navigationwrapper">
+				<div class="humbugur-menu" style="display: none;">
+					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="22" viewBox="0 0 33 22" fill="none">
+						<rect x="0.0810547" y="0.181763" width="32" height="5.81818" fill="#3F2E85"/>
+						<rect x="0.0810547" y="8.90906" width="32" height="4.36364" fill="#3F2E85"/>
+						<rect x="0.0810547" y="16.1818" width="32" height="5.81818" fill="#3F2E85"/>
+					</svg>
+				</div>
+				<div class="nav">
+					<div class="close" style="display: none;">
+						<svg viewBox="0 0 24 24" fill="none" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+					</div>
+					<div class="navinnr">
+						<ul>
+							<li>
+								<a href="">
+									Get the app 
+									<svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22" fill="none" style="margin-left: 6px;">
+										<path d="M29.4273 7.15065L32.6891 1.60829C32.9727 1.068 32.76 0.405702 32.2282 0.126841C31.7141 -0.134591 31.0759 0.0222688 30.7568 0.510276L27.4241 6.15721C22.3541 4.04832 16.6459 4.04832 11.5759 6.15721L8.24318 0.510276C7.90636 0.00484 7.215 -0.15202 6.70091 0.161699C6.20455 0.475417 6.045 1.10286 6.31091 1.60829L9.57273 7.15065C4.07727 10.2356 0.496364 15.7953 0 22H39C38.5036 15.7953 34.9227 10.2356 29.4273 7.15065ZM10.6364 17.2071C9.41318 17.2071 8.42045 16.2311 8.42045 15.0285C8.42045 13.8259 9.41318 12.8499 10.6364 12.8499C11.8595 12.8499 12.8523 13.8259 12.8523 15.0285C12.8523 16.2311 11.8595 17.2071 10.6364 17.2071ZM28.3636 17.2071C27.1405 17.2071 26.1477 16.2311 26.1477 15.0285C26.1477 13.8259 27.1405 12.8499 28.3636 12.8499C29.5868 12.8499 30.5795 13.8259 30.5795 15.0285C30.5795 16.2311 29.5868 17.2071 28.3636 17.2071Z" fill="#3E2089"/>
+									</svg>
+								</a>
+							</li>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="About.html">About us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<!-- Start Truck Owners -->
+<div class="truckownersec">
+	<div class="truckslider drag-container"> 
+        <div class="truckslide first active panel-one" id="drag-left" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/happy-indian-farmer-green-turmeric-agriculture-field-1.jpg);">
+            <div class="truckslideinnr">         	
+				<div class="truckownercntnt">
+					<h3 class="whiteText">Truck <br>Owners</h3>
+					<div class="truckownerpara">
+						<p class="whiteText">With thousands of loads available across India every single day, the trucking business is a lot more crowded than you would like to believe. Load unavailability has been a constant bane for truckers and fleet owners alike – not finding appropriately priced, matching loads and waiting days to book reverse loads are two reasons why. <br>Enter TrucksUp: our innovative trucking app that truck owners can use to connect with a vast network of TrucksUp-verified load providers, book loads online (at real-time rates and on their preferred lanes), optimize routes, secure faster and safer payments, receive digital challans, and so much more!   </p>
+					</div>
+				</div>
+				<div class="btnarrow">					
+				</div>
+			</div>
+		</div>
+        <div class="truckslide panel-two" id="drag-right" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/desktop-size-min.png);">
+            <div class="truckslideinnr"> 
+				<div class="truckownercntnt">
+					<h3 class="whiteText">Business <br>Associates</h3>
+					<div class="truckownerpara">
+						<p class="whiteText">As a shipper, there is nothing more distressing than having to place your trust in a carrier you know little to nothing about.  <br>Our trucking application, TrucksUp, makes it seamless between load providers and trucker owners so only the best of a pool of skilled and verified drivers can pick up your valuable loads. You can connect with verified truckers through our network, track your shipments in real-time, add loads from your recent trips, and avail 24/7 customer support! Ready to lean on TrucksUp to carry your load? Download the app today.</p>
+					</div>
+				</div>  				
+				<div class="btnarrow">					
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Truck Owners -->
+
+
+
+<!-- Start Footer -->
+<footer class="sitefooter">
+	<div class="container">
+		<div class="footerrow">
+			<div class="flex">
+				<div class="col-3">
+					<div class="footercontent">
+						<h3 class="mgB52 whiteText">TrucksUp</h3>
+						<p class="whiteText">TrucksUp is a customer-driven company with a proven commitment to excellence and a value-based policy in all aspects of its business to satisfy aspiring truck owners, business partners, and the transportation industry of India.</p>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="footerlink">
+						<h4>Qucik Links</h4>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Features</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Benefits</a></li>
+							<li><a href="">App Flow</a></li>
+							<li><a href="">Quick Tour</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2">
+					<h4>Find Us</h4>
+					<div class="socialmedia">
+						<ul>
+							<li><a href=""><img src="images/facebook.png"></a></li>
+							<li><a href=""><img src="images/whatsaap.png"></a></li>
+							<li><a href=""><img src="images/youtube.png"></a></li>
+							<li><a href=""><img src="images/instagram.png"></a></li>
+							<li><a href=""><img src="images/linkedin.png"></a></li>
+						</ul>
+
+						<img src="images/appbuttonorange.png" alt="app andriod">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footershape">
+		<img src="images/footer-shape.svg" alt="shape">
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<p class="whiteText">Copyright © TrucksUp. All Right Reserved.</p>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+ //   $('.truckslider').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	dots: false,
+	// 	focusOnSelect: false,
+	// 	arrows: true,
+	// 	infinite: true,
+	// 	variableWidth: true
+	// });
+	// $('.btnarrow').on('click', function () {
+	//     var curr = $('.truckslider').find('.active');
+	// 	if(curr.next().length > 0) { // If you want to stop at last element
+	// 	   curr.next().addClass('active');
+	// 	   curr.removeClass('active');
+	// 	}
+	// 	else if (curr.prev().length > 0) { // If you want to stop at last element
+	// 	   curr.prev().addClass('active');
+	// 	   curr.removeClass('active');
+	// 	}
+
+	//  });
+
+
+	var left = document.getElementById('drag-left');
+var right = document.getElementById('drag-right');
+
+
+if($(window).width() > 1900){
+
+	  $(function() {
+    $(right).resizable({
+      minHeight: 200,
+      minWidth: 800
+    });
+  });
+  $(function() {
+    $(left).resizable({
+      minHeight: 200,
+      minWidth: 800,
+     maxWidth:3000 
+    });
+  });
+};
+if($(window).width() < 1900){
+
+	  $(function() {
+    $(right).resizable({
+      minHeight: 200,
+      minWidth: 500
+    });
+  });
+  $(function() {
+    $(left).resizable({
+      minHeight: 200,
+      minWidth: 500,
+     maxWidth:2580 
+    });
+  });
+};
+if($(window).width() < 1440){
+
+	  $(function() {
+    $(right).resizable({
+      minHeight: 200,
+      minWidth: 380
+    });
+  });
+  $(function() {
+    $(left).resizable({
+      minHeight: 200,
+      minWidth: 380,
+     maxWidth:1880 
+    });
+  });
+};
+
+// Left Panel
+$(left).resizable({
+  handles: 'e',
+  minWidth: 0,
+  minHeight: $("body").height(),
+  maxWidth: $("body").width(),
+  maxHeight: $("body").height(),
+  resize: function(event, ui) {
+  var width = ui.size.width;
+  var height = ui.size.height;
+  $(right).width(right);
+    $("#Info").text("Width: " + width + " & Height: " + height);
+  }
+});
+});
+</script>
+<style type="text/css">
+	.truckslider {
+		display: flex;
+		overflow: hidden;
+	}
+	.truckslide {
+		height: 87rem;
+		background-size: cover;
+	}	
+	.truckslideinnr {
+		height: 100%;
+		position: relative;
+	}	
+	.truckslider .truckslide .truckslideinnr .btnarrow {
+		content: "";
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    right: -12px;
+	    width: 20px;
+	    background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/seprater.png);
+	    z-index: 2;
+	    opacity: 0;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    cursor: pointer;
+	    background-position: center;
+	}
+	.truckslider .truckslide.first.active .truckslideinnr .btnarrow {
+		opacity: 1;
+	}
+	.truckslider .truckslide.second.active .truckslideinnr .btnarrow {
+		opacity: 1;
+		transform: rotate(180deg);
+		left: -1.5rem;
+		right: auto;
+	}
+	.truckownercntnt h3 {
+		padding: 9.6rem 8.6rem
+	}
+	.truckslide.slick-active .truckslideinnr:before {
+		opacity: 1
+	}
+	.truckownerpara p {
+	    /*display: -webkit-box;
+	    max-width: 500px;
+	    -webkit-line-clamp: 6;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;*/
+	}
+	.truckslide.active .truckownerpara p {
+		display: block;
+		max-width: unset;
+	}
+	.ui-resizable-e {
+  background-color: transparent;
+}
+.ui-resizable-e:hover {
+  cursor: col-resize;
+}
+/*RIGHT Panel*/
+/*.ui-resizable-w {
+  background-color: black;
+}
+.ui-resizable-w:hover {
+  cursor: col-resize;
+}*/
+
+* {
+   box-sizing: border-box;
+}
+p {
+   color: darkslategray;
+}
+.drag-container {
+   display: flex;
+
+}
+ [class^=panel] {
+ padding: 60px 24px;
+ background-color: transparent;
+}
+.panel-one {
+   width: 70%;
+}
+.panel-two {
+   flex: 1;
+   width: 30%;
+}
+.dragbar {
+   padding: 6px;
+   cursor: col-resize;
+   background-color: transparent;
+}
+#drag-right, #drag-left {
+   min-height:200px;
+   min-width:500px;
+   border:1px double transparent;
+}
+@media(min-width: 1900px) {
+#drag-right, #drag-left {
+   min-height:200px;
+   min-width:800px;
+   border:1px double transparent;
+}
+}
+@media(max-width: 1440px) {
+#drag-right, #drag-left {
+   min-height:200px;
+   min-width:380px;
+   border:1px double transparent;
+}
+}
+</style>
+</body>
+
+</html>
