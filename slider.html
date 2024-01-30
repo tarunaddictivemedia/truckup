@@ -55,7 +55,7 @@
 <!-- Start Truck Owners -->
 <div class="truckownersec">
 	<div class="truckslider"> 
-        <div class="truckslide" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/happy-indian-farmer-green-turmeric-agriculture-field-1.jpg);">
+        <div class="truckslide first active" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/happy-indian-farmer-green-turmeric-agriculture-field-1.jpg);">
             <div class="truckslideinnr">         	
 				<div class="truckownercntnt">
 					<h3 class="whiteText">Truck <br>Owners</h3>
@@ -63,16 +63,20 @@
 						<p class="whiteText">With thousands of loads available across India every single day, the trucking business is a lot more crowded than you would like to believe. Load unavailability has been a constant bane for truckers and fleet owners alike – not finding appropriately priced, matching loads and waiting days to book reverse loads are two reasons why. <br>Enter TrucksUp: our innovative trucking app that truck owners can use to connect with a vast network of TrucksUp-verified load providers, book loads online (at real-time rates and on their preferred lanes), optimize routes, secure faster and safer payments, receive digital challans, and so much more!   </p>
 					</div>
 				</div>
+				<div class="btnarrow">					
+				</div>
 			</div>
 		</div>
-        <div class="truckslide" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/desktop-size-min.png);">
+        <div class="truckslide second" style="background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/desktop-size-min.png);">
             <div class="truckslideinnr"> 
 				<div class="truckownercntnt">
 					<h3 class="whiteText">Business <br>Associates</h3>
 					<div class="truckownerpara">
 						<p class="whiteText">As a shipper, there is nothing more distressing than having to place your trust in a carrier you know little to nothing about.  <br>Our trucking application, TrucksUp, makes it seamless between load providers and trucker owners so only the best of a pool of skilled and verified drivers can pick up your valuable loads. You can connect with verified truckers through our network, track your shipments in real-time, add loads from your recent trips, and avail 24/7 customer support! Ready to lean on TrucksUp to carry your load? Download the app today.</p>
 					</div>
-				</div>  
+				</div>  				
+				<div class="btnarrow">					
+				</div>
             </div>
         </div>
     </div>
@@ -140,45 +144,86 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 <script>
 $(document).ready(function(){
-   $('.truckslider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: false,
-		focusOnSelect: false,
-		arrows: true,
-		infinite: true,
-		variableWidth: true
-	});
+ //   $('.truckslider').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	dots: false,
+	// 	focusOnSelect: false,
+	// 	arrows: true,
+	// 	infinite: true,
+	// 	variableWidth: true
+	// });
+	$('.btnarrow').on('click', function () {
+	    var curr = $('.truckslider').find('.active');
+		if(curr.next().length > 0) { // If you want to stop at last element
+		   curr.next().addClass('active');
+		   curr.removeClass('active');
+		}
+		else if (curr.prev().length > 0) { // If you want to stop at last element
+		   curr.prev().addClass('active');
+		   curr.removeClass('active');
+		}
+
+	 });
 });
 </script>
 <style type="text/css">
+	.truckslider {
+		display: flex;
+		overflow: hidden;
+	}
 	.truckslide {
-		width: 117rem !important;
+		width: 30%;
 		height: 87rem;
+		background-size: cover;
+	}	
+	.truckslide.active {
+		width: 70% !important;
 	}
 	.truckslideinnr {
 		height: 100%;
 		position: relative;
 	}	
-	.truckslideinnr:before {
+	.truckslider .truckslide .truckslideinnr .btnarrow {
 		content: "";
 	    height: 100%;
 	    position: absolute;
 	    top: 0;
-	    right: -10px;
-	    width: 50px;
+	    right: -1.5rem;
+	    width: 8rem;
 	    background-image: url(https://beta.trucksups.in/wp-content/uploads/2024/01/Group-13952.png);
 	    z-index: 2;
 	    opacity: 0;
 	    background-repeat: no-repeat;
 	    background-size: cover;
+	    cursor: pointer;
 	    background-position: center;
+	}
+	.truckslider .truckslide.first.active .truckslideinnr .btnarrow {
+		opacity: 1;
+	}
+	.truckslider .truckslide.second.active .truckslideinnr .btnarrow {
+		opacity: 1;
+		transform: rotate(180deg);
+		left: -1.5rem;
+		right: auto;
 	}
 	.truckownercntnt h3 {
 		padding: 9.6rem 8.6rem
 	}
 	.truckslide.slick-active .truckslideinnr:before {
 		opacity: 1
+	}
+	.truckownerpara p {
+	    display: -webkit-box;
+	    max-width: 400px;
+	    -webkit-line-clamp: 6;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	}
+	.truckslide.active .truckownerpara p {
+		display: block;
+		max-width: unset;
 	}
 </style>
 </body>
